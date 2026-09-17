@@ -57,5 +57,4 @@
 | | `;` | `PONTO_VIRGULA` |
 | | `,` | `VIRGULA` |
 | | `.` | `PONTO` |
-| | `:` | `DOIS_PONTOS` |
 | Espaços em branco | `[ \t\r\n]+` | `WHITESPACE` |
