@@ -1,5 +1,7 @@
 # ESPECIFICAÇÃO TOKENS
 ## Linguagem JB
+<div align="center">
+
 <p align="center">
   <img src="language_jb_round.png" alt="Logo circular da Linguagem JB" width="240">
 </p>
@@ -61,3 +63,5 @@
 | | `,` | `VIRGULA` |
 | | `.` | `PONTO` |
 | Espaços em branco | `[ \t\r\n]+` | `WHITESPACE` |
+
+</div>
