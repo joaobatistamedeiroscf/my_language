@@ -22,7 +22,7 @@
 | | `void` | `VOID` |
 | Valores Booleanos | `true` | `TRUE` |
 | | `false` | `FALSE` |
-| Identificadores | `[a-zA-Z_][a-zA-Z0-9_]*` | `ID` |
+| Identificadores | `[a-zA-Z][a-zA-Z0-9_]*` | `ID` |
 | Números | `[0-9]+` | `INT_LITERAL` |
 | | `[0-9]+\.[0-9]+` | `REAL_LITERAL` |
 | Strings | `"([^"\\]|\\.)*"` | `STRING_LITERAL` |
