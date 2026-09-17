@@ -1,5 +1,8 @@
 # ESPECIFICAÇÃO TOKENS
 ## Linguagem JB
+<p align="center">
+  <img src="language_jb_round.png" alt="Logo circular da Linguagem JB" width="240">
+</p>
 
 | Categoria | Expressão Regular | TOKEN |
 |---|---|---|
