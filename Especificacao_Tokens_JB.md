@@ -37,7 +37,7 @@
 | | `-` | `OP_SUB` |>
 | | `/` | `OP_DIV` |
 | | `%` | `OP_MOD` |
-| | `*` | `OP_MULT` |
+| | `*` | `OP_MUL` |
 | Operadores Relacionais | `<=` | `OP_LE` |
 | | `>=` | `OP_GE` |
 | | `==` | `OP_EQ` |
