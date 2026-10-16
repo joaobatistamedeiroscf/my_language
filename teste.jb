@@ -1,3 +1,13 @@
-for (int i = 0; i < 10; i++) {
-    int x = 1;
+func soma(int x , int y){
+    return x + y  ;
+}
+
+
+int idade = 18 ; 
+bool alistamento ; 
+
+if (idade == 18){
+    alistamento =  true ; 
+}else {
+    alistamento = false ;   
 }

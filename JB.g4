@@ -6,9 +6,12 @@ program
 
 statement
     :variableDecl
+    |assignment 
     |ifStmt
     |whileStmt
-    |forStmt 
+    |forStmt
+    |funcStmt
+    |returnStmt  
     |block
 
     ;
@@ -16,6 +19,11 @@ statement
 variableDecl
     : primitiveType ID (ATRIB expression)? PONTO_VIRGULA
     ;
+ 
+assignment 
+    : ID ATRIB expression PONTO_VIRGULA 
+    ;
+
 ifStmt
     : IF PAR_ESQ expression PAR_DIR statement
       (ELSE statement)?
@@ -39,12 +47,28 @@ forUpdate
     | ID OP_DEC
     ;
 
+returnStmt
+    : RETURN expression PONTO_VIRGULA
+    ;
+
+funcStmt
+    : FUNC ID PAR_ESQ parameters? PAR_DIR  block
+    ;
+
+parameters
+    : parameter (VIRGULA parameter)*
+    ;
+
+parameter
+    : primitiveType ID
+    ;
 
 primitiveType
     : INT
     | REAL
     | STR
     | BOOL
+   
     ;
 
 block
@@ -98,6 +122,10 @@ BOOL
     : 'bool'
     ;
 
+VOID 
+    : 'void'
+    ;
+
 TRUE
     : 'true'
     ;
@@ -106,6 +134,9 @@ FALSE
     : 'false'
     ;
 
+RETURN 
+    : 'return' 
+    ;
 
 INT_LITERAL
     : [0-9]+
@@ -219,6 +250,13 @@ OP_DEC
     : '--' 
     ;
 
+FUNC 
+    : 'func'
+    ;
+
+VIRGULA
+    : ','
+    ;   
 ID
     : [a-zA-Z][a-zA-Z0-9_]*
     ;

@@ -28,6 +28,12 @@ public interface JBVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVariableDecl(JBParser.VariableDeclContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link JBParser#assignment}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAssignment(JBParser.AssignmentContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link JBParser#ifStmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -57,6 +63,30 @@ public interface JBVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitForUpdate(JBParser.ForUpdateContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JBParser#funcStmt}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFuncStmt(JBParser.FuncStmtContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JBParser#parameters}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitParameters(JBParser.ParametersContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JBParser#parameter}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitParameter(JBParser.ParameterContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link JBParser#returnType}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitReturnType(JBParser.ReturnTypeContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link JBParser#primitiveType}.
 	 * @param ctx the parse tree
