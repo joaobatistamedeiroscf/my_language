@@ -23,6 +23,7 @@
 | Tipos | `int` | `INT` |
 | | `real` | `REAL` |
 | | `str` | `STR` |
+| | `char` | `CHAR` |
 | | `bool` | `BOOL` |
 | | `void` | `VOID` |
 | Valores Booleanos | `true` | `TRUE` |
@@ -63,6 +64,5 @@
 | | `;` | `PONTO_VIRGULA` |
 | | `,` | `VIRGULA` |
 | | `.` | `PONTO` |
-| Espaços em branco | `[ \t\r\n]+` | `WHITESPACE` |
 
 </div>
