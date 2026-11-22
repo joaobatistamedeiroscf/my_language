@@ -12,11 +12,8 @@
 | | `else` | `ELSE` |
 | | `while` | `WHILE` |
 | | `for` | `FOR` |
-| | `repeat` | `REPEAT` |
 | | `return` | `RETURN` |
 | | `func` | `FUNC` |
-| | `break` | `BREAK` |
-| | `continue` | `CONTINUE` |
 | | `const` | `CONST` |
 | | `print` | `PRINT` |
 | | `input` | `INPUT` |
@@ -50,19 +47,12 @@
 | | `!` | `OP_NOT` |
 | Operadores de Incremento/Decremento | `++` | `OP_INC` |
 | | `--` | `OP_DEC` |
-| Operadores de Atribuição | `+=` | `ATRIB_SOMA` |
-| | `-=` | `ATRIB_SUB` |
-| | `*=` | `ATRIB_MULT` |
-| | `/=` | `ATRIB_DIV` |
-| | `%=` | `ATRIB_MOD` |
 | Delimitadores | `(` | `PAR_ESQ` |
 | | `)` | `PAR_DIR` |
 | | `{` | `CHAVE_ESQ` |
 | | `}` | `CHAVE_DIR` |
-| | `[` | `COLCHETE_ESQ` |
-| | `]` | `COLCHETE_DIR` |
 | | `;` | `PONTO_VIRGULA` |
-| | `,` | `VIRGULA` |
+| | `,` | `VIRGULA` | 
 | | `.` | `PONTO` |
 
 </div>
