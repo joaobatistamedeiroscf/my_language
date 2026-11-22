@@ -28,11 +28,11 @@
 | Identificadores | `[a-zA-Z][a-zA-Z0-9_]*` | `ID` |
 | Números | `[0-9]+` | `INT_LITERAL` |
 | | `[0-9]+\.[0-9]+` | `REAL_LITERAL` |
-| Strings | `"([^"\\]|\\.)*"` | `STRING_LITERAL` |
-| Caracteres | `'([^'\\]|\\.)'` | `CHAR_LITERAL` |
+| Strings | `"([^"\\]\|\\.)*"` | `STRING_LITERAL` |
+| Caracteres | `'([^'\\]\|\\.)'` | `CHAR_LITERAL` |
 | Atribuição | `=` | `ATRIB` |
 | Operadores Aritméticos | `+` | `OP_SOMA` |
-| | `-` | `OP_SUB` |>
+| | `-` | `OP_SUB` |
 | | `/` | `OP_DIV` |
 | | `%` | `OP_MOD` |
 | | `*` | `OP_MUL` |
